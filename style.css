@@ -1,161 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono&family=Work+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kumbh+Sans:wght@400;700&family=Merriweather:ital@0;1&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono&family=Work+Sans:wght@400;800&display=swap');
 
-body {    
+body {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background: url(pattern-background-mobile.svg) no-repeat; 
-    width: 375px;
-    height: 709px;
-    margin: auto;
-    background-size: 100vw;
+    background-image: url(./bg-pattern-top.svg), url(./bg-pattern-bottom.svg);
+    background-color: hsl(185 75% 39%);
+    min-height: 100vh;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 40vw bottom 50vh, left 40vw top 50vh;
 }
 
 main {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    width: 327px;
-    height: 567px;
-    margin: auto;
-    overflow: hidden;
-    box-shadow: 0px 40px 40px -20px; 
-    max-width: 100%;
+    width: 100vw;
+    height: 100vh;      
 }
 
-.illustr {  
+.center {
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    background-color: #382AE1;
-    height: auto;
-    border-radius: 20px 20px 0 0;
+    justify-content: center;
+    align-items: center;   
+}
+
+main .card {
+    width: 326px;
+    height: 374px;   
+    border-radius: 15px;
+    background: url(./bg-pattern-card.svg) no-repeat;
     margin: 0 auto;
+    background-color: white;
+    
 }
 
-h1 {    
+main .card .profpic {
+    width: 96px;
+    height: 96px;
+    border: 5px solid #FFFFFF;
+    margin-top: 92px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-bottom: 24px;
+    border-radius: 50%;
+}
+
+main .card h1 {
     text-align: center;
-    font-family: #1F2E55;
-    font-size: 22px;
-    font-family: Red Hat Display;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;  
 }
 
-p {
-    flex-wrap: wrap;
-    text-align: center;
-    height: 75px;
-    color: #717FA6;
-    font-family: Red Hat Display;
-    margin: 24px;
-}
-
-.flex-container1 {
-    display: flex;  
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-    background-color: #F7F9FF;
-    width: 279px;
-    height: 81px;
-}
-
-.music {
-    margin-left: 16px;
-    margin-top: 17px;
-    margin-bottom: 16px;
-}
-.annual {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    font-family: Red Hat Display;
-}
-
-.plan {
-    color: #1F2E55;
-    font-weight: 900;
-}
-
-.price {
-    color: #717FA6;
-    font-weight: 500;
-}
-.change {
-    margin-left: 42.34px;
-    color: #382AE1;
-    font-size: 13px;
-    font-family: Red Hat Display;
+main .card h1 .name {
+    font-family: Kumbh Sans;
+    font-size: 18px;
     font-weight: 700;
-    text-decoration: underline;
-    margin-right: 6px;
+    line-height: 22.32px;
+    color: #2E3349;
 }
 
-.proceed {
-  display: inline-block;
-  background-color: #382AE1; /* Purple */
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 900;
-  width: 279px;
-  height: 50px;
-  margin: 0 auto;
-  border-radius: 11px;
-  box-shadow: 0px 40px 40px -20px #0D30BD;
+main .card h1 .age {
+    font-family: Kumbh Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.32px;
+    color: #6B7082;
 }
 
-.cancel {
-    font-size: 15px;
-    font-weight: 900;
-    font-family: Red Hat Display;
-    color: #717FA6;
-    display: inline-block;
-    margin: 24px auto;
+main .card p {
     text-align: center;
+    margin-top: 13px;
+    font-family: Kumbh Sans;
+    font-size: 14px;
+    font-weight: 400;
+    Line-height: 17.36px;
+    color: #6B7082;
 }
 
-@media screen and (min-width: 500px) {
+main .card .footer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    height: 37px;
+    width: 70%;
+    margin: auto;
+}
+
+.followers, .likes, .photos {
+    margin: 0 auto;
+    font-family: Kumbh Sans;   
+}
+
+.count {
+    color: #2E3349;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.32px;
+}
+
+.nouns {
+    text-align: center;
+    color: #6B7082;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.4px;
+}
+
+@media screen and (min-width: 667px) {
+
     body {
         width: 1440px;
-        height: 900px;
+        height: 720px;
         max-width: 100%;
         background-size: 100%;
     }
-
-    .main {
-        width: 450px;
-        height: 697px;
-        
-    }
-
-    .proceed {
-        width: 354px;
-        height: 50px;    
-    }
-
-    .flex-container1 {
-        width: 354px;
-        height: 98px;
-    }
-
-    .change:hover {
-        text-decoration: none;
-    }
-
-    .cancel:hover {
-        color: #1F2E55;
-    }
-
-    .proceed:hover {
-        background-color: #766CF1;
+    main .card {
+        width: 350px;    
     }
 }
+
+
