@@ -5,30 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  
+  <title>Frontend Mentor | Profile card component</title>
 
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-
-  <title>Frontend Mentor | Order summary card</title>
+  
 </head>
 <body>
+  <main class="center">
+    <div class="card">
+      <img class="profpic" src="./image-victor.jpg" alt="Profile picture of a young man">
+      <h1>
+           <span class="name">Victor Crest</span>
+           <span class="age">26</span>  
+      </h1>
+      <p>London</p>
 
-<main class="main">
-    <div class="illustr"><img src="./illustration-hero.svg"></div>
-    <h1>Order Summary</h1>
-    <p>You can now listen to millions of songs,<br>audiobooks, and podcasts on any<br>device anywhere you like!</p>
-
-  <div class="flex-container1">
-        <div class="music"><img src="./icon-music.svg"></div>
-        <div class="annual">
-            <div class="plan">Annual Plan</div>
-            <div class="price">$59.99/year</div>
+      <hr>
+    
+      <div class="footer">
+        <div class="followers">
+          <div class="count">80K</div>
+          <div class="nouns">Followers</div>
         </div>
-        <div class="change"><a>Change</a></div> 
-  </div>
-      <button class="proceed"><a>Proceed to Payment</a></button>
-      <div class="cancel"><a>Cancel Order</a></div>
-</main>
 
+        <div class="likes">
+          <div class="count">803K</div>
+          <div class="nouns">Likes</div>
+        </div>
 
+        <div class="photos">
+          <div class="count">1.4K</div>
+          <div class="nouns">Photos</div>
+        </div>
+      </div>
+
+    </div>
+    
+  </main>
 </body>
 </html>
